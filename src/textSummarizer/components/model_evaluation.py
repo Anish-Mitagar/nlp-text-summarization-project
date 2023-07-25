@@ -30,7 +30,7 @@ class ModelEvaluation:
             
             inputs = tokenizer(article_batch, max_length=1024,  truncation=True, 
                             padding="max_length", return_tensors="pt")
-            
+             
             summaries = model.generate(input_ids=inputs["input_ids"].to(device),
                             attention_mask=inputs["attention_mask"].to(device), 
                             length_penalty=0.8, num_beams=8, max_length=128)

@@ -2,7 +2,7 @@
 # (An End-To-End ML Project using Pytorch)
 
 #### Important Notes: 
-If Cloning this project, it is importent is note that in ```src/textSummarizer/components/model_trainer.py```, the trainset is set to testset for the sake of a shorter training time due to limited hardware resources. You can control output length and model penalties in ```src/textSummarizer/pipeline/predict```
+If Cloning this project, it is importent is note that in ```src/textSummarizer/components/model_trainer.py```, the trainset is set to testset for the sake of a shorter training time due to limited hardware resources. You can control output length and model penalties in ```src/textSummarizer/pipeline/predict```. Training in reasonable time depends on your hardware.
 
 If you just want to run pipeline and not the app run ```python3 main.py```
 
@@ -35,7 +35,7 @@ Model: https://huggingface.co/google/pegasus-cnn_dailymail
     alt="Our logo">
 </img>
 
-## Project structure
+## Project / Pipeline Structure
 
 #### For every "stage" added to the pipeline I added to the following in this order
 
@@ -57,13 +57,13 @@ Model: https://huggingface.co/google/pegasus-cnn_dailymail
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Anish-Mitagar/End-To-End-Coral-Classification.git
+git clone https://github.com/Anish-Mitagar/nlp-text-summarization-project.git
 ```
 #### 2. Create a conda environment after opening the repository
 
 ```bash
-conda create -n coral python=3.9 -y
-conda activate coral
+conda create -n textsum python=3.9 -y
+conda activate textsum
 ```
 
 #### 3. Install the requirements
